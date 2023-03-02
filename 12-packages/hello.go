@@ -17,6 +17,7 @@ import (
 	"log"
 
 	"greetings"
+	"reverse"
 )
 
 func main() {
@@ -42,4 +43,6 @@ func main() {
 	for key, value := range messages {
 		fmt.Println("Name:", key, "=>", "Message:", value)
 	}
+
+	fmt.Println(reverse.ReverseString("hello"))
 }
