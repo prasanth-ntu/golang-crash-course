@@ -34,4 +34,25 @@ func main() {
 	for key, value := range cart {
 		fmt.Println("Key:", key, "=>", "Element:", value)
 	}
+
+	// Define another map //
+	emails := make(map[string]string)
+
+	// assign key value pairs to email map
+	emails["Santh"] = "santh@gmail.com"
+	emails["Sean"] = "sean@gmail.com"
+	for key, value := range emails {
+		fmt.Printf("Key: %s => Value: %s\n", key, value)
+	}
+
+	// Declare map and add KV at one shot //
+	emails2 := map[string]string{
+		"Santh": "santh@gmail.com",
+		"Sean":  "sean@gmail.com",
+		"Shawn": "shawn@gmail.com",
+	}
+	for key, value := range emails2 {
+		fmt.Printf("Key: %s => Value: %s\n", key, value)
+	}
+
 }
