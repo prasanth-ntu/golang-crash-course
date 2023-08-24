@@ -28,14 +28,16 @@ func main() {
 	fmt.Println(myName, myAge, amICool)
 	fmt.Println("Length of myName =", len(myName))
 
+	// === 3 different approaches ===
+	// --- Approach 1 --- //
 	// var favNumber = 42
 	// var favChocolate = "KitKat"
 	// var favTeam = "CSK"
 
-	// Compound creation (creating multiple variables) //
+	// --- Approach 2: Compound creation (creating multiple variables) --- //
 	// var favNumber, favChocolate, favTeam = 42, "KitKat", "CSK"
 
-	// Block creation //
+	// Approach 3 - Block creation //
 	var (
 		favNumber    = 42
 		favChocolate = "KitKat"
