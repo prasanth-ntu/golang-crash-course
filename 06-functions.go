@@ -17,7 +17,9 @@ func addNumber(num1 int, num2 int) int {
 func main() {
 	fmt.Println("Intro to functions")
 
+	fmt.Println("Countdown from 10")
 	countDown(10)
+	fmt.Println("Countdown from 10")
 	countDown(5)
 
 	theSum := addNumber(5, 10)

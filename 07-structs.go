@@ -3,13 +3,22 @@ package main
 import "fmt"
 
 func main() {
+	/*
+		=== APPROACH 1 ===
+		Define a new structure "Animal".
+		struct is a collection of fields with different types.
+	*/
 	type Animal struct {
 		class  string
 		age    int
 		gender bool // false: Male, true: Female
 	}
 
-	// One way to define a struct variable //
+	/*
+		=== Different ways to define struct variable
+		(a.k.a Animal instance) ===
+	*/
+	// --- Approach 1 --- //
 	var teddy = Animal{
 		class:  "bear",
 		age:    24,
@@ -23,17 +32,21 @@ func main() {
 	teddy.class = "cute bear"
 	fmt.Println("teddy:", teddy)
 
-	// Alternative way to define struct variable //
+	// --- Approach 2 --- //
 	var leo = Animal{"lion", 2, false} // Order matters
 	fmt.Println("leo:", leo)
 
-	// Another way to define struct variable //
+	// --- Approach 3 --- //
 	var nemo = Animal{} // Assigns default value to each variable in struct
 	fmt.Println("nemo=", nemo)
 	nemo.class = "Fish"
 	fmt.Println("nemo=", nemo)
 
-	// Another way to create a struct variable without "type" //
+	/*
+		=== APPROACH 2 ===
+		Another way to create a struct variable without "type"
+		i.e., Anonymous structure (a structure without a name)
+	*/
 	pumba := struct {
 		class  string
 		age    int
