@@ -4,6 +4,14 @@ import "fmt"
 
 func main() {
 	/*
+		Python vs Go arrays
+		1. Python list is same as Go slice
+		2. Python list is dynamic in size, but Go array is not
+		3. Python list can contain elements of different types, but Go array can contain elements of same type only
+		4. Syntax: Python list is defined using [] and Go array is defined using [<size>]<data-type>
+	*/
+
+	/*
 		The size of arrays cannot be modified (resized) once created in Go.
 		However, we can modify the size of the slices
 	*/
@@ -27,4 +35,6 @@ func main() {
 	for i := 0; i < len(purchases); i++ {
 		fmt.Println(i, purchases[i])
 	}
+
+	fmt.Printf("Type of purchaes: %T\n", purchases)
 }
