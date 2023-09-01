@@ -1,0 +1,5 @@
+# Ignore temp.go file
+temp.go
+
+# Ignore .idea folder by IntelliJ
+.idea
