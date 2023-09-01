@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
+	/*
+		The size of arrays cannot be modified (resized) once created in Go.
+		However, we can modify the size of the slices
+	*/
+
 	// Approach 1 //
 	purchases := [5]float32{20.1, 21.1, 22.2, 21.3, 22.4}
 	fmt.Println(purchases)
