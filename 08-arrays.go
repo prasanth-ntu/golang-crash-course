@@ -8,7 +8,7 @@ func main() {
 		However, we can modify the size of the slices
 	*/
 
-	// Approach 1 //
+	// Approach 1 : Create and assign in one line //
 	purchases := [5]float32{20.1, 21.1, 22.2, 21.3, 22.4}
 	fmt.Println(purchases)
 	fmt.Println(purchases[0], purchases[4])
