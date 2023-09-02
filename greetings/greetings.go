@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-// Hello returns a greeting for the named person.
+// Hello returns a randomised greeting for the named person.
 func Hello(name string) (string, error) {
 	// If no name was given, return an error with a message.
 	if name == "" {
@@ -20,7 +20,7 @@ func Hello(name string) (string, error) {
 }
 
 // Hellos returns a map that associates each of the named people
-// with a greeting message.
+// with a random greeting message.
 func Hellos(names []string) (map[string]string, error) {
 	// A map to associate names with messages.
 	messages := make(map[string]string)
