@@ -36,9 +36,11 @@ func main() {
 	r1 := Rectangle{width: 10, height: 5}
 	fmt.Println("c1 =", c1, "r1 =", r1)
 
+	// Approach 1: Call area() method directly //
 	fmt.Printf("Area of circle = %.2f\n", c1.area())
 	fmt.Printf("Area of rectangle = %.2f\n", r1.area())
 
+	// Approach 2: Call getArea() method //
 	fmt.Printf("Area of circle = %.2f\n", getArea(c1))
 	fmt.Printf("Area of rectangle = %.2f\n", getArea(r1))
 }
