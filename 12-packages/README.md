@@ -1,6 +1,8 @@
 # Multi-part tutorial
 <!-- TOC -->
+* [Multi-part tutorial](#multi-part-tutorial)
   * [Step 1: Create a Go module](#step-1--create-a-go-module)
+  * [Step 2: Call our code from another module](#step-2--call-our-code-from-another-module)
 <!-- TOC -->
 
 ## Step 1: Create a Go module
@@ -30,6 +32,7 @@ The `go mod init <....>` command creates a `go.mod` file to track our code's dep
 3. Create `greetings.go` file with content provided in source link
 
 ## Step 2: Call our code from another module
+Source: [Link](https://go.dev/doc/tutorial/call-module-code)
 1. Create `hello` dir, where we will write our caller
 ```
 $ cd ..
